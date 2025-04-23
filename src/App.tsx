@@ -1,8 +1,9 @@
+import Banner from "./components/Banner";
 
 function App() {
   return (
-    <div >
-      <h1>Keroles Portfolio</h1>
+    <div className="min-h-screen">
+      <Banner />
     </div>
   );
 }
