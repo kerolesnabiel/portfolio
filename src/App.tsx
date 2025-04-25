@@ -1,21 +1,26 @@
-import About from "./components/About";
-import Banner from "./components/Banner";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
+import { lazy, Suspense } from "react";
+import LoadingThreeDotsPulse from "./components/LoadingThreeDotsPulse";
+
+const Navbar = lazy(() => import("./components/Navbar"));
+const Banner = lazy(() => import("./components/Banner"));
+const About = lazy(() => import("./components/About"));
+const Projects = lazy(() => import("./components/Projects"));
+const Skills = lazy(() => import("./components/Skills"));
+const Contact = lazy(() => import("./components/Contact"));
 
 function App() {
   return (
     <div className="min-h-screen">
-      <Navbar />
-      <main className="container m-auto">
-        <Banner />
-        <About />
-        <Projects />
-        <Skills />
-        <Contact />
-      </main>
+      <Suspense fallback={<LoadingThreeDotsPulse />}>
+        <Navbar />
+        <main className="container m-auto">
+          <Banner />
+          <About />
+          <Projects />
+          <Skills />
+          <Contact />
+        </main>
+      </Suspense>
     </div>
   );
 }

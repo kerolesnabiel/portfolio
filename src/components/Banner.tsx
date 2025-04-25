@@ -26,13 +26,14 @@ const Banner = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="text-lg md:text-2xl text-gray-300 mb-6 max-w-xl italic"
+            className="text-lg md:text-2xl text-gray-300 mb-6 max-w-xl"
           >
-            Passionate{" "}
-            <span className="text-orange-500">Backend Developer </span>
-            with expertise in building efficient and scalable solutions using
-            <span className="text-purple-600"> .NET</span> and
-            <span className="text-green-600"> Node.js</span>
+            Passionate
+            <span className="text-orange-500"> Backend Developer </span>
+            with expertise in building efficient high-performance solutions
+            using
+            <span className="font-bold"> .NET</span> and
+            <span className="font-bold"> Node.js</span>
           </motion.p>
 
           <div className="flex flex-wrap gap-4">
@@ -66,11 +67,13 @@ const Banner = () => {
           transition={{ duration: 0.8 }}
           className="flex justify-center"
         >
-          <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 aspect-square rounded-full overflow-hidden border-4 border-orange-600 shadow-2xl">
+          <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 aspect-square overflow-hidden shadow-2xl">
             <img
-              src="/src/assets/images/profile.jpeg"
+              // src="/src/assets/images/profile.jpeg"
+              src="/profile.webp"
               alt="Keroles Nabil"
               className="w-full h-full object-cover"
+              loading="lazy"
             />
           </div>
         </motion.div>
