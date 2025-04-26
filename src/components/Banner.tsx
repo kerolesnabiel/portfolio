@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 
 const Banner = () => {
   return (
-    <section className="container grid place-items-center px-4 sm:px-6 lg:px-8 mx-auto mt-24 md:mt-32">
+    <section className="container min-h-fit grid place-items-center px-4 sm:px-6 lg:px-8 mx-auto mt-24 md:mt-32">
       <div className="grid md:grid-cols-2 items-center gap-12">
         <motion.div
           initial={{ opacity: 0, x: -60 }}
@@ -48,7 +48,7 @@ const Banner = () => {
             </motion.a>
 
             <motion.a
-              href="/resume.pdf"
+              href="/Keroles Nabil Resume.pdf"
               download
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
@@ -69,11 +69,11 @@ const Banner = () => {
         >
           <div className="relative w-60 h-60 sm:w-72 sm:h-72 md:w-80 md:h-80 aspect-square overflow-hidden shadow-2xl">
             <img
-              // src="/src/assets/images/profile.jpeg"
               src="/profile.webp"
               alt="Keroles Nabil"
               className="w-full h-full object-cover"
-              loading="lazy"
+              loading="eager"
+              decoding="async"
             />
           </div>
         </motion.div>
