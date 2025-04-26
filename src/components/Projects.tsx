@@ -7,7 +7,7 @@ const projects = [
     description:
       "Distributed platform with user, product, cart, order, payment, and notification services.",
     link: "https://github.com/kerolesnabiel/ecommerce-microservices",
-    image: "/src/assets/images/ecommerce.webp",
+    image: "/projects/ecommerce.webp",
     tech: [
       ".NET 9",
       "PostgreSQL",
@@ -25,7 +25,7 @@ const projects = [
     description:
       "RESTful API with authentication, post/comment/follow features, and admin panel.",
     link: "https://github.com/kerolesnabiel/SocialMediaAPI",
-    image: "/src/assets/images/social-api.webp",
+    image: "/projects/social-api.webp",
     tech: [
       "ASP.NET Web API",
       "SQL Server",
@@ -40,7 +40,7 @@ const projects = [
     description:
       "Chat backend API with SignalR, JWT authentication, and real-time updates.",
     link: "https://github.com/kerolesnabiel/RealTimeChatAPI",
-    image: "/src/assets/images/chat-api.webp",
+    image: "/projects/chat-api.webp",
     tech: ["ASP.NET Core", "WebSockets", "SignalR", "SQL Server", "JWT"],
   },
   {
@@ -48,7 +48,7 @@ const projects = [
     description:
       "Frontend chat app with profile management, search, and real-time messaging.",
     link: "https://github.com/kerolesnabiel/RealTimeChatWebApp",
-    image: "/src/assets/images/chat-web.webp",
+    image: "/projects/chat-web.webp",
     tech: ["React", "TypeScript", "TailwindCSS", "SignalR"],
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     description:
       "Personal portfolio built with React and TailwindCSS to showcase projects, and skills — made with vibe coding.",
     link: "https://github.com/kerolesnabiel/portfolio",
-    image: "/src/assets/images/portfolio.webp",
+    image: "/projects/portfolio.webp",
     tech: ["React", "TypeScript", "TailwindCSS", "Framer Motion", "Vite"],
   },
 ];
