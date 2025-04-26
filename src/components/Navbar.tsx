@@ -70,7 +70,12 @@ export default function Navbar() {
                   key={link.name}
                   href={link.href}
                   className="text-gray-300 hover:text-orange-500 transition-colors"
-                  onClick={() => setMenuOpen(false)}
+                  // onClick={() => handleMobileNav(link.href)}
+                  onClick={() => {
+                    setMenuOpen(false);
+                    const section = document.querySelector(link.href);
+                    setTimeout(() => section?.scrollIntoView(), 10);
+                  }}
                 >
                   {link.name}
                 </a>
